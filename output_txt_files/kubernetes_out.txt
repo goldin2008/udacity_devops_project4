@@ -1,0 +1,18 @@
+(.devops) Vs-MBP-2019:final_project vdurakci$ ./run_kubernetes.sh 
+kubectl run --generator=deployment/apps.v1 is DEPRECATED and will be removed in a future version. Use kubectl run --generator=run-pod/v1 or kubectl create instead.
+deployment.apps/predict-app created
+NAME                           READY   STATUS              RESTARTS   AGE
+predict-app-7d76f5fcc9-mkqbg   0/1     ContainerCreating   0          0s
+error: unable to forward port because pod is not running. Current status=Pending
+(.devops) Vs-MBP-2019:final_project vdurakci$ kubectl get pods
+NAME                           READY   STATUS    RESTARTS   AGE
+predict-app-7d76f5fcc9-mkqbg   1/1     Running   0          34s
+(.devops) Vs-MBP-2019:final_project vdurakci$ ./run_kubernetes.sh 
+kubectl run --generator=deployment/apps.v1 is DEPRECATED and will be removed in a future version. Use kubectl run --generator=run-pod/v1 or kubectl create instead.
+Error from server (AlreadyExists): deployments.apps "predict-app" already exists
+NAME                           READY   STATUS    RESTARTS   AGE
+predict-app-7d76f5fcc9-mkqbg   1/1     Running   0          37s
+Forwarding from 127.0.0.1:8000 -> 80
+Forwarding from [::1]:8000 -> 80
+Handling connection for 8000
+
