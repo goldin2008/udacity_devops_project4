@@ -8,7 +8,7 @@ dockerpath=vdurakci/predict-prices:1.0.0
 
 # Step 2
 # Run the Docker Hub container with kubernetes
-kubectl run predict-app --image=$dockerpath --port=80
+kubectl run predict-app --image=$dockerpath --port=80 -r=2
 
 # Step 3:
 # List kubernetes pods
