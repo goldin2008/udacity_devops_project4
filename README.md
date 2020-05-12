@@ -14,17 +14,17 @@ The recommended way to run Python scripts during local testing is in a virtual P
 
 ## List of Files in the Repository
 
-`README.md`: Readme file for the GitHub repository
-`Dockerfile`: Dockre configuration file for creating the docker image
-`Makefile`: Make file that includes the command to install the python dependencies (`make install`) and linting (`make lint`)
-`app.py`: Main Python file for the flask application
-`requirements.txt`: list of the dependency libraries required by the app
-`run_docker.sh`: shell script to build, list and run the docker container
-`upload_docker.sh`: shell script to tag and upload the docker image to Docker Hub
-`run_kubernetes.sh`: shell script to run the container in a Kubernetes pod, list the pod and forward its port to the host port
-`make_prediction.sh`: Shell script to call the application endpoint with test data
-`model_data`: Folder where the trained model is stored
-`output_txt_files`: Folder where the outputs of the run_docker.sh and run_kubernetes.sh scripts are stored
+* `README.md`: Readme file for the GitHub repository
+* `Dockerfile`: Dockre configuration file for creating the docker image
+* `Makefile`: Make file that includes the command to install the python dependencies (`make install`) and linting (`make lint`)
+* `app.py`: Main Python file for the flask application
+* `requirements.txt`: list of the dependency libraries required by the app
+* `run_docker.sh`: shell script to build, list and run the docker container
+* `upload_docker.sh`: shell script to tag and upload the docker image to Docker Hub
+* `run_kubernetes.sh`: shell script to run the container in a Kubernetes pod, list the pod and forward its port to the host port
+* `make_prediction.sh`: Shell script to call the application endpoint with test data
+* `model_data`: Folder where the trained model is stored
+* `output_txt_files`: Folder where the outputs of the run_docker.sh and run_kubernetes.sh scripts are stored
 
 ---
 
