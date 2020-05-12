@@ -1,17 +1,20 @@
 (.devops) Vs-MBP-2019:udacity_devops_project4 vdurakci$ ./run_kubernetes.sh 
 kubectl run --generator=deployment/apps.v1 is DEPRECATED and will be removed in a future version. Use kubectl run --generator=run-pod/v1 or kubectl create instead.
-deployment.apps/predict-app created
-NAME                           READY   STATUS              RESTARTS   AGE
-predict-app-7d76f5fcc9-27qn9   0/1     ContainerCreating   0          0s
-predict-app-7d76f5fcc9-ssb8k   0/1     ContainerCreating   0          0s
-error: unable to forward port because pod is not running. Current status=Pending
-(.devops) Vs-MBP-2019:udacity_devops_project4 vdurakci$ ./run_kubernetes.sh 
-kubectl run --generator=deployment/apps.v1 is DEPRECATED and will be removed in a future version. Use kubectl run --generator=run-pod/v1 or kubectl create instead.
 Error from server (AlreadyExists): deployments.apps "predict-app" already exists
 NAME                           READY   STATUS    RESTARTS   AGE
-predict-app-7d76f5fcc9-27qn9   1/1     Running   0          9s
-predict-app-7d76f5fcc9-ssb8k   1/1     Running   0          9s
+predict-app-7d76f5fcc9-27qn9   1/1     Running   0          54m
+predict-app-7d76f5fcc9-ssb8k   1/1     Running   0          54m
 Forwarding from 127.0.0.1:8000 -> 80
 Forwarding from [::1]:8000 -> 80
 Handling connection for 8000
+
+
+
+(.devops) Vs-MBP-2019:final_project vdurakci$ ./make_prediction.sh 
+Port: 8000
+{
+  "prediction": [
+    20.35373177134412
+  ]
+}
 
